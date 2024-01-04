@@ -1,0 +1,22 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "testinglocalapp"
+client_id = "client_id"
+application_url = "https://32a8-182-180-118-76.ngrok-free.app"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_pixels,read_customer_events"
+
+[auth]
+redirect_urls = [ "https://32a8-182-180-118-76.ngrok-free.app/shopify/auth" ]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "webpixelapp.myshopify.com"
